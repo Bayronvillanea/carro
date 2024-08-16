@@ -1,0 +1,327 @@
+/* Estilo General */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Contenedor Principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #00274D;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+    background-color: #001f3f;
+}
+
+header .logo {
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    animation: fadeInLeft 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    animation: fadeInDown 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    animation: fadeInUp 1s ease-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFDF00;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 39, 77, 0.85);
+    z-index: -1;
+}
+
+.hero-content {
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: zoomIn 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: zoomIn 2s ease-out;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #FFD700;
+    color: #00274D;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeInUp 2.5s ease-out;
+}
+
+.button:hover {
+    background-color: #FFDF00;
+    transform: scale(1.05);
+}
+
+/* Sección Hero Images */
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea los elementos al centro del contenedor */
+    margin-top: 30px;
+    position: relative; /* Necesario para posicionar los elementos hijos absolutamente */
+    animation: fadeInUp 3s ease-out;
+}
+
+.hero-image {
+    max-width: 300px;
+    border-radius: 50px;
+    animation: fadeInUp 3.5s ease-out;
+    margin: 0 20px; /* Añade margen entre las imágenes */
+}
+
+/* Secciones de Contenido */
+.content-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.content-section:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #00274D;
+    animation: fadeInUp 1s ease-out;
+}
+
+.content-section p, .content-section ul {
+    font-size: 1.1em;
+    animation: fadeInUp 1.5s ease-out;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+}
+
+.content-section ul {
+    list-style-type: none; /* Elimina los círculos de la lista */
+    padding-left: 0;
+}
+
+.content-section ul li {
+    background-color: #FFD700;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #00274D;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-section ul li:hover {
+    background-color: #FFDF00;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Reducido para hacer el footer más delgado */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para un aspecto profesional */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+footer p {
+    margin: 5px 0; /* Espaciado reducido */
+}
+
+footer a {
+    color: #F7C11D;
+    text-decoration: none;
+    font-size: 1.1em; /* Tamaño de fuente ligeramente reducido */
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #FFC107;
+}
+
+/* Línea divisoria sutil */
+footer::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #F7C11D;
+    margin: 10px auto; /* Espaciado reducido */
+    border-radius: 2px;
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero-images {
+        flex-direction: column; /* Cambia la dirección del flex para apilar las imágenes verticalmente */
+    }
+
+    .hero-image {
+        max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+        margin: 10px 0; /* Ajusta el margen para que haya suficiente espacio entre las imágenes */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del texto del encabezado en pantallas más pequeñas */
+    }
+
+    .button {
+        font-size: 1em; /* Ajusta el tamaño del botón para pantallas más pequeñas */
+        padding: 8px 20px; /* Ajusta el padding del botón */
+    }
+
+    .content-section h2 {
+        font-size: 2em; /* Ajusta el tamaño del texto de los encabezados de sección */
+    }
+
+    .content-section p, .content-section ul {
+        font-size: 1em; /* Ajusta el tamaño del texto en las secciones de contenido */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    .button {
+        font-size: 0.9em; /* Ajusta aún más el tamaño del botón */
+        padding: 6px 15px; /* Ajusta el padding del botón */
+    }
+
+    .content-section h2 {
+        font-size: 1.8em; /* Ajusta el tamaño del texto de los encabezados de sección */
+    }
+
+    .content-section p, .content-section ul {
+        font-size: 0.9em; /* Ajusta el tamaño del texto en las secciones de contenido */
+    }
+}
